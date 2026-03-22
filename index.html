@@ -273,6 +273,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
 .tl-dot-wrap{display:flex;flex-direction:column;align-items:center;gap:0}
 .tl-dot{width:14px;height:14px;border-radius:50%;background:var(--teal);flex-shrink:0;margin-top:3px;border:2px solid white;box-shadow:0 0 0 2px var(--teal)}
 .tl-dot.future{background:white;box-shadow:0 0 0 2px var(--border)}
+.tl-dot.done{background:var(--teal);box-shadow:0 0 0 2px var(--teal)}
 .tl-line{width:2px;flex:1;background:var(--border);min-height:20px}
 .tl-content{flex:1;padding-bottom:4px}
 .tl-date{font-family:var(--mono);font-size:0.7rem;color:var(--teal-mid);letter-spacing:0.06em;margin-bottom:3px}
@@ -337,7 +338,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
 .inline-list li{padding:5px 0;border-bottom:1px solid var(--border);font-size:0.86rem;color:var(--mid);display:flex;align-items:flex-start;gap:8px}
-.inline-list li::before{content:'→';color:var(--teal-light);font-size:0.8rem;flex-shrink:0;margin-top:1px}
+.inline-list li::before{content:'';color:var(--teal-light);font-size:0.8rem;flex-shrink:0;margin-top:1px}
 .inline-list li:last-child{border-bottom:none}
 .status-badge{display:inline-block;padding:2px 9px;border-radius:10px;font-family:var(--mono);font-size:0.64rem;letter-spacing:0.04em}
 .sb-done{background:#E8F8EE;color:#1E7A3C}
@@ -363,7 +364,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
   <div class="sidebar-logo">
     <div class="brand">Build New Habits</div>
     <div class="tagline">Alongside · Business Portfolio</div>
-    <span class="version">MARCH 2026 · V1.0</span>
+    <span class="version">MARCH 2026 · V1.1</span>
   </div>
 
   <div class="nav-section">
@@ -406,7 +407,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
     <div class="nav-label">Strategies</div>
     <a href="#s15" class="nav-item"><span class="nav-num">15</span>Community Strategy</a>
     <a href="#s16" class="nav-item"><span class="nav-num">16</span>Content Strategy</a>
-    <a href="#s17" class="nav-item"><span class="nav-num">17</span>Founding Member Strategy</a>
+    <a href="#s17" class="nav-item"><span class="nav-num">17</span>Lifetime Member Strategy</a>
   </div>
 
   <div class="nav-section">
@@ -420,7 +421,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
   </div>
 
   <div class="sidebar-footer">
-    <p>Build New Habits · Graeme Wright<br>buildnewhabits@outlook.com<br>Weston-super-Mare, Somerset</p>
+    <p>Build New Habits · Graeme Wright<br>buildnewhabits@outlook.com<br>Taunton, Somerset</p>
   </div>
 </nav>
 
@@ -441,8 +442,9 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
     <div class="cover-meta-item"><span class="label">Version</span><span class="value">March 2026</span></div>
     <div class="cover-meta-item"><span class="label">Status</span><span class="value">Confidential</span></div>
   </div>
-  <div class="cover-badge" aria-label="60% MVP complete">
-    <span class="big">60%</span>
+  <!-- UPDATED: completion % raised from 60% to ~88% -->
+  <div class="cover-badge" aria-label="Approximately 88% MVP complete">
+    <span class="big">~88%</span>
     <span class="sm">MVP<br>Complete</span>
   </div>
   <div class="scroll-hint" aria-hidden="true">Scroll to begin</div>
@@ -465,7 +467,8 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
       <a href="#s6" class="toc-item"><span class="toc-num">06</span><div class="toc-text"><h3>Business Model</h3><p>Freemium tiers, pricing, B2B pipeline, operating costs</p><span class="toc-tag tag-financial">financial</span></div><span class="toc-arrow">→</span></a>
       <a href="#s7" class="toc-item"><span class="toc-num">07</span><div class="toc-text"><h3>Financial Projections</h3><p>Three-year revenue model, conservative and optimistic scenarios</p><span class="toc-tag tag-financial">financial</span></div><span class="toc-arrow">→</span></a>
       <a href="#s8" class="toc-item"><span class="toc-num">08</span><div class="toc-text"><h3>Go-to-Market Strategy</h3><p>Community-first approach, channels, launch sequence</p><span class="toc-tag tag-strategic">strategic</span></div><span class="toc-arrow">→</span></a>
-      <a href="#s9" class="toc-item"><span class="toc-num">09</span><div class="toc-text"><h3>Product Roadmap</h3><p>Build phases, April beta, public launch, B2B pipeline</p><span class="toc-tag tag-strategic">strategic</span></div><span class="toc-arrow">→</span></a>
+      <!-- UPDATED: "April beta" → "June beta, September launch" -->
+      <a href="#s9" class="toc-item"><span class="toc-num">09</span><div class="toc-text"><h3>Product Roadmap</h3><p>Build phases, June beta, September public launch, B2B pipeline</p><span class="toc-tag tag-strategic">strategic</span></div><span class="toc-arrow">→</span></a>
       <a href="#s10" class="toc-item"><span class="toc-num">10</span><div class="toc-text"><h3>Pre-Beta Task Tracker</h3><p>All tasks across legal, technical, financial, community — tickable</p><span class="toc-tag tag-task">tracker</span></div><span class="toc-arrow">→</span></a>
       <a href="#s11" class="toc-item"><span class="toc-num">11</span><div class="toc-text"><h3>Privacy Policy</h3><p>Full GDPR-compliant privacy policy — ready to publish</p><span class="toc-tag tag-legal">legal</span></div><span class="toc-arrow">→</span></a>
       <a href="#s12" class="toc-item"><span class="toc-num">12</span><div class="toc-text"><h3>Terms of Service</h3><p>Subscription terms, disclaimers, user rights — ready to publish</p><span class="toc-tag tag-legal">legal</span></div><span class="toc-arrow">→</span></a>
@@ -473,7 +476,8 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
       <a href="#s14" class="toc-item"><span class="toc-num">14</span><div class="toc-text"><h3>Ethical Commitments</h3><p>Product ethics declaration — never/always design commitments</p><span class="toc-tag tag-legal">legal</span></div><span class="toc-arrow">→</span></a>
       <a href="#s15" class="toc-item"><span class="toc-num">15</span><div class="toc-text"><h3>Community Strategy</h3><p>Reddit, Facebook, TikTok — trust-first community presence plan</p><span class="toc-tag tag-strategic">strategic</span></div><span class="toc-arrow">→</span></a>
       <a href="#s16" class="toc-item"><span class="toc-num">16</span><div class="toc-text"><h3>Content Strategy</h3><p>Content pillars, posting schedule, voice and tone guidance</p><span class="toc-tag tag-strategic">strategic</span></div><span class="toc-arrow">→</span></a>
-      <a href="#s17" class="toc-item"><span class="toc-num">17</span><div class="toc-text"><h3>Founding Member Strategy</h3><p>Friend code system, recruitment, feedback structure, conversion</p><span class="toc-tag tag-strategic">strategic</span></div><span class="toc-arrow">→</span></a>
+      <!-- UPDATED: Founding Member → Lifetime Member -->
+      <a href="#s17" class="toc-item"><span class="toc-num">17</span><div class="toc-text"><h3>Lifetime Member Strategy</h3><p>Friend code system, LTM cap (50 places), recruitment, feedback structure</p><span class="toc-tag tag-strategic">strategic</span></div><span class="toc-arrow">→</span></a>
       <a href="#ax1" class="toc-item"><span class="toc-num">A–F</span><div class="toc-text"><h3>Annexes</h3><p>Detailed how-to guides: ICO, Supabase, Stripe, GDPR, community post templates, evidence base</p><span class="toc-tag tag-annex">reference</span></div><span class="toc-arrow">→</span></a>
     </div>
   </div>
@@ -488,10 +492,11 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
   </div>
   <div class="page">
     <div class="fin-grid" style="margin-bottom:32px">
-      <div class="fin-card"><div class="fc-label">MVP Status</div><div class="fc-val" style="font-size:1.4rem">~60%</div><div class="fc-note">Complete · June 2026 launch</div></div>
+      <!-- UPDATED: ~88% complete, Beta Jun '26, LTM cohort -->
+      <div class="fin-card"><div class="fc-label">MVP Status</div><div class="fc-val" style="font-size:1.4rem">~88%</div><div class="fc-note">Complete · Phase 3 active</div></div>
       <div class="fin-card"><div class="fc-label">Year 1 Revenue</div><div class="fc-val">£25K</div><div class="fc-note">Mid-point projection</div></div>
       <div class="fin-card"><div class="fc-label">Target Market</div><div class="fc-val" style="font-size:1.3rem">200–500K</div><div class="fc-note">UK addressable users</div></div>
-      <div class="fin-card"><div class="fc-label">Beta Launch</div><div class="fc-val" style="font-size:1.3rem">Apr '26</div><div class="fc-note">Founding Member cohort</div></div>
+      <div class="fin-card"><div class="fc-label">Beta Launch</div><div class="fc-val" style="font-size:1.3rem">Jun '26</div><div class="fc-note">Lifetime Member (LTM) cohort — max 50 places</div></div>
       <div class="fin-card"><div class="fc-label">Investment Sought</div><div class="fc-val" style="font-size:1.3rem">£0</div><div class="fc-note">Bootstrapped · lifestyle model</div></div>
       <div class="fin-card"><div class="fc-label">Operating Costs Y1</div><div class="fc-val">~£1K</div><div class="fc-note">Excl. Stripe fees + founder time</div></div>
     </div>
@@ -522,19 +527,19 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
       <div class="card">
         <div class="card-h">Pipeline Products</div>
         <ul class="inline-list" style="margin-top:8px">
-          <li><strong>Student Life Hub</strong> — adaptive HE coaching B2B</li>
+          <li><strong>Alongside: Life</strong> — student independence coaching (B2B HE)</li>
           <li>Target: Weston College pilot, £5–10K/institution/yr</li>
           <li>Same adaptive engine, different coaching domain</li>
-          <li><strong>Senior Tech Skills</strong> — digital inclusion</li>
+          <li><strong>Alongside: Compass</strong> — over-60s digital inclusion</li>
           <li>Grant-funded, council/Age UK partnership model</li>
-          <li>Concept stage only — Alongside first</li>
+          <li>Concept stage only — Alongside: Move first</li>
         </ul>
       </div>
     </div>
 
     <div class="card card-amber" style="margin-top:8px">
       <div class="card-h">Business Classification</div>
-      <p class="card-p">This is a deliberate, founder-led lifestyle business with genuine growth potential — not a venture-scale opportunity, and that is understood and accepted. The business does not seek external investment. Revenue is projected to reach cash-flow positive at approximately 115 paying users, achievable within the Founding Member cohort before public launch.</p>
+      <p class="card-p">This is a deliberate, founder-led lifestyle business with genuine growth potential — not a venture-scale opportunity, and that is understood and accepted. The business does not seek external investment. Revenue is projected to reach cash-flow positive at approximately 115 paying users, achievable within the Lifetime Member (LTM) cohort before public launch.</p>
     </div>
   </div>
 </section>
@@ -612,17 +617,21 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
       </div>
       <div class="founder-creds">
         <table>
-          <tr><td>Name</td><td><strong>Graeme Wright</strong></td></tr>
-          <tr><td>Location</td><td>Weston-super-Mare, Somerset</td></tr>
-          <tr><td>Current Role</td><td>Digital Coach, Weston College</td></tr>
-          <tr><td>Experience</td><td>18 years in education and coaching, including 12 years as Head of Music</td></tr>
-          <tr><td>Qualification 1</td><td>Professional Diploma in Instructional Design</td></tr>
-          <tr><td>Qualification 2</td><td>CMI Level 5 Operational Management</td></tr>
-          <tr><td>Technical Skills</td><td>Full-stack web development (HTML, CSS, JavaScript); app architecture; UX design; product specification</td></tr>
-          <tr><td>Domain Expertise</td><td>Neurodivergent learning and behaviour change; instructional scaffolding; evidence-based programme design</td></tr>
-          <tr><td>Lived Experience</td><td>ADHD; injury management (herniated disc, hamstring recovery); personal history of fitness app abandonment — building for his own community</td></tr>
-          <tr><td>Network</td><td>Somerset Innovation Hub (Alex — confirmed); Weston College (institutional pilot access); SETsquared / Exeter University (Innovation Workout graduate)</td></tr>
-          <tr><td>Contact</td><td>buildnewhabits@outlook.com</td></tr>
+          <tbody>
+            <tr><td>Name</td><td><strong>Graeme Wright</strong></td></tr>
+            <!-- UPDATED: Weston-super-Mare → Taunton -->
+            <tr><td>Location</td><td>Taunton, Somerset</td></tr>
+            <tr><td>Current Role</td><td>Digital Coach, Weston College</td></tr>
+            <tr><td>Experience</td><td>18 years in education and coaching, including 12 years as Head of Music</td></tr>
+            <tr><td>Qualification 1</td><td>Professional Diploma in Instructional Design</td></tr>
+            <tr><td>Qualification 2</td><td>CMI Level 5 Operational Management</td></tr>
+            <tr><td>Technical Skills</td><td>Full-stack web development (HTML, CSS, JavaScript); app architecture; UX design; product specification</td></tr>
+            <tr><td>Domain Expertise</td><td>Neurodivergent learning and behaviour change; instructional scaffolding; evidence-based programme design</td></tr>
+            <tr><td>Lived Experience</td><td>ADHD; injury management (herniated disc, hamstring recovery); personal history of fitness app abandonment — building for his own community</td></tr>
+            <!-- UPDATED: Alex meeting now confirmed and completed -->
+            <tr><td>Network</td><td>Somerset Innovation Hub (Alex — met 17 March 2026; Exeter University partnership and BEP routes in progress); Weston College (institutional pilot access); SETsquared / Exeter University (Innovation Workout graduate)</td></tr>
+            <tr><td>Contact</td><td>buildnewhabits@outlook.com</td></tr>
+          </tbody>
         </table>
       </div>
     </div>
@@ -666,7 +675,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
 
     <div class="highlight-box amber">
       <h4>The Retention Opportunity</h4>
-      <p>If Alongside achieves 10% Day 30 retention against the industry average of 3%, that represents a 3× competitive advantage in user lifetime value. Word of mouth compounds significantly when users feel genuinely served. Neurodivergent communities amplify authentic products quickly — and that is the primary acquisition channel.</p>
+      <p>If Alongside achieves 10% Day 30 retention against the industry average of 3%, that represents a 3x competitive advantage in user lifetime value. Word of mouth compounds significantly when users feel genuinely served. Neurodivergent communities amplify authentic products quickly — and that is the primary acquisition channel.</p>
     </div>
   </div>
 </section>
@@ -740,19 +749,20 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
           <td><strong>Personal</strong></td>
           <td class="num">£9.99/mo · £89/yr</td>
           <td>Coach personality variants, schedule intelligence, menstrual cycle adaptation, 30/90-day analytics, calorie estimates, prescribed exercises Level 2+, data export, unlimited programmes, extended history</td>
-          <td><span class="status-badge sb-progress">May 2026</span></td>
+          <td><span class="status-badge sb-progress">Phase 4 — May 2026</span></td>
         </tr>
         <tr>
-          <td><strong>Founding Member</strong></td>
+          <!-- UPDATED: April 2026 → June 2026; Founding Member → Lifetime Member (LTM) -->
+          <td><strong>Lifetime Member (LTM)</strong></td>
           <td class="num">£49 lifetime</td>
-          <td>3 months free unlimited access, then £49 lifetime. 10 friend codes. Direct product input. Named in acknowledgements.</td>
-          <td><span class="status-badge sb-progress">April 2026</span></td>
+          <td>Full unlimited access during beta (June–August 2026), then £49 lifetime. Capped at 50 places. 10 friend codes. Direct product input. Named in acknowledgements.</td>
+          <td><span class="status-badge sb-progress">June 2026 — max 50 places</span></td>
         </tr>
         <tr>
           <td><strong>B2B — Future</strong></td>
           <td class="num">£5–10K/yr</td>
-          <td>Institutional licensing for Student Life Hub (HE/NHS). Admin dashboard. Outcome reporting. Weston College pilot pathway.</td>
-          <td><span class="status-badge sb-planned">Q3 2026+</span></td>
+          <td>Institutional licensing for Alongside: Life (HE/NHS). Admin dashboard. Outcome reporting. Weston College pilot pathway.</td>
+          <td><span class="status-badge sb-planned">Q4 2026+</span></td>
         </tr>
       </tbody>
     </table>
@@ -774,7 +784,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
 
     <div class="highlight-box amber">
       <h4>Cash-Flow Positive Threshold</h4>
-      <p>The business reaches cash-flow positive at approximately 115 paying users at the £89/year price point. This is achievable within the Founding Member cohort before public launch. Founder's time is absorbed by existing day job income through the build phase, with a review trigger at £50,000 annual revenue.</p>
+      <p>The business reaches cash-flow positive at approximately 115 paying users at the £89/year price point. This is achievable within the Lifetime Member (LTM) cohort before public launch. Founder's time is absorbed by existing day job income through the build phase, with a review trigger at £50,000 annual revenue.</p>
     </div>
   </div>
 </section>
@@ -789,14 +799,16 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
   <div class="page">
     <div class="card card-amber">
       <div class="card-h">Underlying Assumptions</div>
-      <p class="card-p">Projections are built on conservative assumptions. They do not include B2B licensing revenue in Year 1 or Year 2. They assume entirely organic user acquisition with no paid advertising budget. Conversion from Free to Personal tier is modelled at 5%, in line with freemium app industry averages. Monthly churn is modelled at 5%. All figures are in GBP.</p>
+      <!-- UPDATED: note added re launch date -->
+      <p class="card-p">Projections are built on conservative assumptions. They do not include B2B licensing revenue in Year 1 or Year 2. They assume entirely organic user acquisition with no paid advertising budget. Conversion from Free to Personal tier is modelled at 5%, in line with freemium app industry averages. Monthly churn is modelled at 5%. All figures are in GBP. <strong>Note:</strong> public launch is September 2026, so Year 1 (2026) represents approximately 3–4 months of live trading rather than a full year. Subscriber totals reflect that shorter trading window.</p>
     </div>
 
     <h3 style="font-family:var(--serif);font-size:1.1rem;margin:24px 0 14px;color:var(--dark)">Three-Year Revenue Projections</h3>
     <table class="data-table">
       <thead><tr><th>Year</th><th>Free Users</th><th>Paying Users (5%)</th><th>ARPU</th><th>Subscription Revenue</th><th>Other Revenue</th><th>Total</th></tr></thead>
       <tbody>
-        <tr><td><strong>Year 1 (2026)</strong></td><td class="num">5,000</td><td class="num">250</td><td class="num">£90/yr</td><td class="num">£22,500</td><td class="num">£2,450 (50 Founding Members @ £49)</td><td class="num"><strong>£24,950</strong></td></tr>
+        <!-- UPDATED: note Sept launch in Year 1 row -->
+        <tr><td><strong>Year 1 (2026)</strong><br><span style="font-size:0.75rem;color:var(--muted)">Sept–Dec launch window</span></td><td class="num">5,000</td><td class="num">250</td><td class="num">£90/yr</td><td class="num">£22,500</td><td class="num">£2,450 (50 LTMs @ £49)</td><td class="num"><strong>£24,950</strong></td></tr>
         <tr><td><strong>Year 2 (2027)</strong></td><td class="num">15,000</td><td class="num">1,000</td><td class="num">£95/yr</td><td class="num">£95,000</td><td class="num">—</td><td class="num"><strong>£95,000</strong></td></tr>
         <tr><td><strong>Year 3 (2028)</strong></td><td class="num">35,000</td><td class="num">2,500</td><td class="num">£100/yr</td><td class="num">£250,000</td><td class="num">B2B pilot adds £25K+</td><td class="num"><strong>£275,000+</strong></td></tr>
       </tbody>
@@ -809,7 +821,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
       </div>
       <div class="highlight-box amber">
         <h4>Mid-Point Scenario</h4>
-        <p>Year 1: £24,950 (250 paying users + 50 Founding Members). Assumes normal organic growth and 5% freemium conversion.</p>
+        <p>Year 1: £24,950 (250 paying users + 50 LTMs). Assumes normal organic growth and 5% freemium conversion.</p>
       </div>
       <div class="highlight-box coral">
         <h4>Optimistic Scenario</h4>
@@ -821,9 +833,10 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
     <table class="data-table">
       <thead><tr><th>Product</th><th>Model</th><th>Year 1 Target</th><th>Year 2 Target</th></tr></thead>
       <tbody>
-        <tr><td><strong>Alongside</strong></td><td>B2C Subscription</td><td class="num">£20–25K</td><td class="num">£50–75K</td></tr>
-        <tr><td><strong>Student Life Hub</strong></td><td>B2B Institutional Licensing</td><td class="num">—</td><td class="num">£25–50K</td></tr>
-        <tr><td><strong>Senior Tech Skills</strong></td><td>Grant Funding + Council Licensing</td><td class="num">—</td><td class="num">£10–20K</td></tr>
+        <tr><td><strong>Alongside: Move</strong></td><td>B2C Subscription</td><td class="num">£20–25K</td><td class="num">£50–75K</td></tr>
+        <!-- UPDATED: Student Life Hub → Alongside: Life -->
+        <tr><td><strong>Alongside: Life</strong></td><td>B2B Institutional Licensing</td><td class="num">—</td><td class="num">£25–50K</td></tr>
+        <tr><td><strong>Alongside: Compass</strong></td><td>Grant Funding + Council Licensing</td><td class="num">—</td><td class="num">£10–20K</td></tr>
         <tr><td><strong>Total Portfolio</strong></td><td>—</td><td class="num"><strong>£20–25K</strong></td><td class="num"><strong>£85–145K</strong></td></tr>
       </tbody>
     </table>
@@ -861,18 +874,55 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
       </div>
       <div class="strategy-card">
         <div class="sc-num">Channel 04</div>
+        <!-- UPDATED: reflects meeting has happened -->
         <h3>Somerset Innovation Hub</h3>
-        <p>Confirmed connection: Alex at Somerset Innovation Hub. SETsquared / Exeter University network provides introductions to founders, potential early adopters, and investors in the South West.</p>
+        <p>Alex at Somerset Innovation Hub (met March 2026). Exeter University research partnership and Business Expansion Programme (BEP) routes being explored. SETsquared network provides access to founders and early adopters across the South West.</p>
       </div>
     </div>
 
     <h3 style="font-family:var(--serif);font-size:1.1rem;margin:28px 0 14px;color:var(--dark)">Launch Sequence</h3>
+    <!-- UPDATED: All dates corrected to match v3.0 schedule -->
     <div class="timeline-track">
-      <div class="tl-item"><div class="tl-dot-wrap"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-date">January – March 2026</div><div class="tl-title">Build MVP + Community Seeding</div><div class="tl-body">Working app built. Begin genuine community participation. Identify 5–10 people willing to have deeper conversations about the problem.</div></div></div>
-      <div class="tl-item"><div class="tl-dot-wrap"><div class="tl-dot future"></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-date">April 2026</div><div class="tl-title">Founding Member Beta Launch</div><div class="tl-body">10–50 Founding Members recruited from community conversations. 3 months free access. Structured feedback cycles. Friend code sharing begins.</div></div></div>
-      <div class="tl-item"><div class="tl-dot-wrap"><div class="tl-dot future"></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-date">May 2026</div><div class="tl-title">Payment Integration + First Revenue</div><div class="tl-body">Stripe subscriptions live. Founding Member lifetime pricing locked. First subscription revenue. Feedback cycle analysis and iteration.</div></div></div>
-      <div class="tl-item"><div class="tl-dot-wrap"><div class="tl-dot future"></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-date">June 2026</div><div class="tl-title">Public Launch</div><div class="tl-body">Open to all. Freemium model live. Community-led word-of-mouth growth. MRR tracking begins weekly.</div></div></div>
-      <div class="tl-item"><div class="tl-dot-wrap"><div class="tl-dot future"></div></div><div class="tl-content"><div class="tl-date">Q3 2026</div><div class="tl-title">Student Life Hub Pilot Conversations</div><div class="tl-body">First institutional conversation with Weston College. B2B licensing model tested. Grant application exploration begins.</div></div></div>
+      <div class="tl-item">
+        <div class="tl-dot-wrap"><div class="tl-dot done"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <div class="tl-date">January – March 2026 — COMPLETE</div>
+          <div class="tl-title">Build MVP + Community Research Phase 1</div>
+          <div class="tl-body">Working app built (~88% complete). Phase 3 active. Alex meeting held 17 March. Structured community research programme launched: listening and identifying the right voices.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot-wrap"><div class="tl-dot future"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <div class="tl-date">April – May 2026</div>
+          <div class="tl-title">Beta Infrastructure + Community Research Phase 2</div>
+          <div class="tl-body">Phase 4: Supabase, Stripe, Netlify functions, Plausible, Sentry all configured. Community co-design conversations deepen. LTM pipeline begins. All legal and business setup complete.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot-wrap"><div class="tl-dot future"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <div class="tl-date">June 2026</div>
+          <div class="tl-title">Beta Opens — Lifetime Members (LTMs)</div>
+          <div class="tl-body">Up to 50 LTMs onboarded. Full premium access during beta. Structured feedback cycles. Friend code sharing begins. Stripe payments live.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot-wrap"><div class="tl-dot future"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <div class="tl-date">September 2026</div>
+          <div class="tl-title">Public Launch</div>
+          <div class="tl-body">Open to all. Freemium model live. LTM friend codes shared publicly. Community-led word-of-mouth growth. MRR tracking begins weekly.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot-wrap"><div class="tl-dot future"></div></div>
+        <div class="tl-content">
+          <div class="tl-date">October 2026+</div>
+          <div class="tl-title">Business Expansion + Alongside: Life Conversations</div>
+          <div class="tl-body">Business Expansion Programme with Colin Dart begins. Exeter University research partnership scoping. First Alongside: Life pilot conversation with Weston College.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -889,20 +939,25 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
       <thead><tr><th>Component</th><th>Status</th><th>Notes</th></tr></thead>
       <tbody>
         <tr><td>Onboarding flow (9 steps)</td><td><span class="status-badge sb-done">Complete</span></td><td>Full profile capture, conditions, equipment, goals, coach personality</td></tr>
-        <tr><td>Daily check-in (energy, mood, sleep, pain)</td><td><span class="status-badge sb-done">Complete</span></td><td>Mood Meter science, pain fingerprint cache</td></tr>
-        <tr><td>Workout generation engine</td><td><span class="status-badge sb-done">Complete v1.3</span></td><td>Severe zone override live. Pain cache active.</td></tr>
-        <tr><td>Exercise database</td><td><span class="status-badge sb-done">Complete</span></td><td>~500 exercises across 11 category files; 29 conditions</td></tr>
+        <tr><td>Daily check-in (energy, mood, sleep, pain)</td><td><span class="status-badge sb-done">Complete</span></td><td>Mood Meter science, pain fingerprint cache, availableTime chip picker</td></tr>
+        <tr><td>Workout generation engine</td><td><span class="status-badge sb-done">Complete v1.5</span></td><td>Severe zone override live. Pain cache active. Duration cap implemented.</td></tr>
+        <tr><td>Exercise database</td><td><span class="status-badge sb-done">Complete</span></td><td>~500 exercises across 11 category files; 29 conditions; difficultyLevel 1–3 added</td></tr>
         <tr><td>Conditions system</td><td><span class="status-badge sb-done">Complete v2</span></td><td>Zone field, getZoneStatus(), safety tier system</td></tr>
         <tr><td>Coach voice and copywriting</td><td><span class="status-badge sb-done">Complete</span></td><td>12-document specification suite complete</td></tr>
         <tr><td>Design system</td><td><span class="status-badge sb-done">Complete</span></td><td>CSS variables, tokens, components, WCAG 2.2 AA target</td></tr>
-        <tr><td>Workout duration cap fix</td><td><span class="status-badge sb-critical">HIGH PRIORITY</span></td><td>Currently uncapped — Phase 3 first task</td></tr>
-        <tr><td>availableTime wiring</td><td><span class="status-badge sb-progress">Phase 3</span></td><td>Check-in field → getWorkoutParams() integration</td></tr>
-        <tr><td>prescribedExercises Level 1</td><td><span class="status-badge sb-progress">Phase 3</span></td><td>Manual entry, Today view display, tick complete</td></tr>
-        <tr><td>Exercise exit routes (mild pain)</td><td><span class="status-badge sb-progress">Phase 3</span></td><td>Inline alternatives alongside each exercise card</td></tr>
-        <tr><td>Membership / paywall page</td><td><span class="status-badge sb-progress">Phase 3</span></td><td>Premium placeholder visual treatment throughout app</td></tr>
-        <tr><td>Payment integration (Stripe)</td><td><span class="status-badge sb-planned">May 2026</span></td><td>Supabase + Netlify webhook function</td></tr>
-        <tr><td>Public launch</td><td><span class="status-badge sb-planned">June 2026</span></td><td>Open to all. Freemium model live.</td></tr>
-        <tr><td>Student Life Hub pilot</td><td><span class="status-badge sb-planned">Q3 2026</span></td><td>Weston College first conversation</td></tr>
+        <!-- UPDATED: duration cap and availableTime now done -->
+        <tr><td>Workout duration cap</td><td><span class="status-badge sb-done">Complete — S3-1</span></td><td>maxDuration per focus type; per-exercise 40% ceiling; availableTime wired throughout</td></tr>
+        <tr><td>SOLO difficulty progression</td><td><span class="status-badge sb-progress">Phase 3 — S3-2</span></td><td>difficultyLevel 1/2/3 to all exercises; difficultyFloor into workout generator</td></tr>
+        <tr><td>Difficulty feedback loop</td><td><span class="status-badge sb-progress">Phase 3 — S3-2</span></td><td>Too-hard / too-easy buttons; exerciseFeedback schema in store; applyFeedbackWeighting</td></tr>
+        <tr><td>Menstrual cycle adaptation</td><td><span class="status-badge sb-progress">Phase 3 — S3-2</span></td><td>getCyclePhase helper; cycleDay wired into generateDailyOptions; cycle-aware coach rationale</td></tr>
+        <tr><td>prescribedExercises Level 1 display</td><td><span class="status-badge sb-progress">Phase 3 — S3-3</span></td><td>Single "Prescribed Session" card on Today view; dedicated view with timer; credit system</td></tr>
+        <tr><td>Exercise exit routes (mild pain)</td><td><span class="status-badge sb-progress">Phase 3 — S3-4</span></td><td>Inline alternatives alongside each exercise card; coach framing for adaptations</td></tr>
+        <tr><td>Membership / paywall page</td><td><span class="status-badge sb-progress">Phase 3 — S3-5</span></td><td>Premium placeholder visual treatment throughout app</td></tr>
+        <tr><td>PWA active install prompt</td><td><span class="status-badge sb-progress">Phase 3 — S3-6</span></td><td>beforeinstallprompt on Android/Chrome; iOS Safari share sheet modal</td></tr>
+        <tr><td>Payment integration (Stripe)</td><td><span class="status-badge sb-planned">Phase 4 — May 2026</span></td><td>Supabase + Netlify webhook function</td></tr>
+        <!-- UPDATED: public launch Sept 2026 -->
+        <tr><td>Public launch</td><td><span class="status-badge sb-planned">September 2026</span></td><td>Open to all. Freemium model live. LTM friend codes shared.</td></tr>
+        <tr><td>Alongside: Life pilot</td><td><span class="status-badge sb-planned">Q4 2026</span></td><td>Weston College first conversation after public launch</td></tr>
       </tbody>
     </table>
   </div>
@@ -932,14 +987,14 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
         <div class="task-row" data-cat="legal"><input type="checkbox" onchange="toggleTask(this)" aria-label="Register as sole trader with HMRC"><div class="task-content"><div class="task-text">Register as sole trader with HMRC</div><div class="task-detail">gov.uk/set-up-sole-trader · Free · ~15 minutes · Required before trading commercially</div><div class="task-meta"><span class="task-tag tt-legal">legal</span><span class="task-tag tt-high">HIGH</span></div><a href="#ax1" class="task-link">See Annex A for full instructions</a></div></div>
         <div class="task-row" data-cat="legal"><input type="checkbox" onchange="toggleTask(this)" aria-label="Register with ICO as data controller"><div class="task-content"><div class="task-text">Register with ICO as data controller (£40/year)</div><div class="task-detail">ico.org.uk/registration · MUST be completed BEFORE any real user data is collected · Processing health data makes this a legal requirement</div><div class="task-meta"><span class="task-tag tt-legal">legal</span><span class="task-tag tt-critical">CRITICAL — MUST DO FIRST</span></div></div></div>
         <div class="task-row" data-cat="legal"><input type="checkbox" onchange="toggleTask(this)" aria-label="Write and publish Privacy Policy"><div class="task-content"><div class="task-text">Write, review, and publish Privacy Policy</div><div class="task-detail">Use termsfeed.com generator as base, then have reviewed by a solicitor (est. £100–£200). Must explicitly name health data as special category, list all sub-processors (Supabase, Stripe, Sentry, Plausible), and list all 6 GDPR user rights.</div><div class="task-meta"><span class="task-tag tt-legal">legal</span><span class="task-tag tt-critical">CRITICAL</span></div><a href="#s11" class="task-link">See Section 11: Privacy Policy Draft</a></div></div>
-        <div class="task-row" data-cat="legal"><input type="checkbox" onchange="toggleTask(this)" aria-label="Write and publish Terms of Service"><div class="task-content"><div class="task-text">Write, review, and publish Terms of Service</div><div class="task-detail">Use termsfeed.com as base. Must state: not medical advice, subscription terms, cancellation policy, auto-renewal disclosure, Founding Member terms, refund policy.</div><div class="task-meta"><span class="task-tag tt-legal">legal</span><span class="task-tag tt-critical">CRITICAL</span></div><a href="#s12" class="task-link">See Section 12: Terms of Service Draft</a></div></div>
+        <div class="task-row" data-cat="legal"><input type="checkbox" onchange="toggleTask(this)" aria-label="Write and publish Terms of Service"><div class="task-content"><div class="task-text">Write, review, and publish Terms of Service</div><div class="task-detail">Use termsfeed.com as base. Must state: not medical advice, subscription terms, cancellation policy, auto-renewal disclosure, LTM terms, refund policy.</div><div class="task-meta"><span class="task-tag tt-legal">legal</span><span class="task-tag tt-critical">CRITICAL</span></div><a href="#s12" class="task-link">See Section 12: Terms of Service Draft</a></div></div>
         <div class="task-row" data-cat="legal"><input type="checkbox" onchange="toggleTask(this)" aria-label="Build consent screen in app"><div class="task-content"><div class="task-text">Build and test consent screen inside the app</div><div class="task-detail">Must appear before any health data is entered. Empty tick box (not pre-ticked). Links to Privacy Policy and ToS visible. Consent date/time recorded. User cannot proceed without ticking.</div><div class="task-meta"><span class="task-tag tt-legal">legal</span><span class="task-tag tt-critical">CRITICAL</span></div><a href="#s13" class="task-link">See Section 13: Consent Statement</a></div></div>
         <div class="task-row" data-cat="legal"><input type="checkbox" onchange="toggleTask(this)" aria-label="Sign Supabase DPA"><div class="task-content"><div class="task-text">Sign Supabase Data Processing Agreement (DPA)</div><div class="task-detail">Legal Documents section in Supabase dashboard. Makes Supabase your legal data processor under UK GDPR.</div><div class="task-meta"><span class="task-tag tt-legal">legal</span><span class="task-tag tt-high">HIGH</span></div><a href="#ax2" class="task-link">See Annex B: Supabase Setup</a></div></div>
         <div class="task-row" data-cat="legal"><input type="checkbox" onchange="toggleTask(this)" aria-label="Accept Stripe DPA"><div class="task-content"><div class="task-text">Accept Stripe Data Processing Agreement in dashboard settings</div><div class="task-detail">Stripe Dashboard → Settings → Data Processing. Legal requirement for processing UK/EU user payment data.</div><div class="task-meta"><span class="task-tag tt-legal">legal</span><span class="task-tag tt-high">HIGH</span></div><a href="#ax3" class="task-link">See Annex C: Stripe Setup</a></div></div>
         <div class="task-row" data-cat="legal"><input type="checkbox" onchange="toggleTask(this)" aria-label="Sign Sentry DPA and configure data scrubbing"><div class="task-content"><div class="task-text">Sign Sentry DPA and configure health data scrubbing</div><div class="task-detail">Sentry account settings. Add scrubbing patterns for: condition, pain, burnout, mood, energy, diagnosis, symptom. Never log health information in error messages.</div><div class="task-meta"><span class="task-tag tt-legal">legal</span><span class="task-tag tt-high">HIGH</span></div><a href="#ax4" class="task-link">See Annex D: GDPR Checklist</a></div></div>
         <div class="task-row" data-cat="legal"><input type="checkbox" onchange="toggleTask(this)" aria-label="Build data deletion mechanism"><div class="task-content"><div class="task-text">Build and test data deletion mechanism (Right to Erasure)</div><div class="task-detail">GDPR Article 17 — users can request deletion of all their data. Must be available in Settings. Test by creating a test account and deleting all data across Supabase tables. Write and keep a procedure document.</div><div class="task-meta"><span class="task-tag tt-legal">legal</span><span class="task-tag tt-high">HIGH</span></div></div></div>
         <div class="task-row" data-cat="legal"><input type="checkbox" onchange="toggleTask(this)" aria-label="List sub-processors in Privacy Policy"><div class="task-content"><div class="task-text">Confirm all sub-processors are named in the Privacy Policy</div><div class="task-detail">Must include: Supabase (database, EU region), Stripe (payments), Sentry (error tracking), Plausible (anonymous analytics). Link to each provider's privacy documentation.</div><div class="task-meta"><span class="task-tag tt-legal">legal</span></div></div></div>
-        <div class="task-row" data-cat="legal"><input type="checkbox" onchange="toggleTask(this)" aria-label="Set up 72-hour breach notification process"><div class="task-content"><div class="task-text">Document breach notification process (ICO 72-hour rule)</div><div class="task-detail">Under UK GDPR you must notify ICO within 72 hours of becoming aware of a breach. Write a simple procedure: who to call, what to report, which users to notify. Keep it somewhere you can find at 2am in a crisis.</div><div class="task-meta"><span class="task-tag tt-legal">legal</span></div></div></div>
+        <div class="task-row" data-cat="legal"><input type="checkbox" onchange="toggleTask(this)" aria-label="Document breach notification process"><div class="task-content"><div class="task-text">Document breach notification process (ICO 72-hour rule)</div><div class="task-detail">Under UK GDPR you must notify ICO within 72 hours of becoming aware of a breach. Write a simple procedure: who to call, what to report, which users to notify. Keep it somewhere you can find at 2am in a crisis.</div><div class="task-meta"><span class="task-tag tt-legal">legal</span></div></div></div>
       </div>
     </div>
 
@@ -947,21 +1002,20 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
     <div class="task-section" data-category="tech">
       <div class="task-section-title">Technical Setup <span class="count" id="cnt-tech"></span></div>
       <div class="task-list" id="tl-tech">
-        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Fix workout duration cap"><div class="task-content"><div class="task-text">Fix workout duration cap in getWorkoutParams() — workoutGenerator.js</div><div class="task-detail">Currently uncapped — high-energy sessions can generate 90+ minute workouts. Add maxDuration per workout focus type. Wire availableTime parameter (Micro 10min → 2 exercises, Quick 20min → 3, Short 30min → 4, Standard 40min → 5, Long 50min → 6, Open 60+ → 7, null → intensity-derived).</div><div class="task-meta"><span class="task-tag tt-tech">technical</span><span class="task-tag tt-critical">PHASE 3 FIRST</span></div></div></div>
         <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Create Supabase project in EU region"><div class="task-content"><div class="task-text">Create Supabase project in EU region (Ireland or Frankfurt)</div><div class="task-detail">CRITICAL: Region cannot be changed after creation. Must be EU for GDPR compliance. Go to supabase.com → New Project → select eu-west-1 (Ireland) or eu-central-1 (Frankfurt).</div><div class="task-meta"><span class="task-tag tt-tech">technical</span><span class="task-tag tt-critical">CRITICAL</span></div><a href="#ax2" class="task-link">See Annex B: Supabase Setup</a></div></div>
         <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Enable Row-Level Security on all Supabase tables"><div class="task-content"><div class="task-text">Enable Row-Level Security (RLS) on ALL Supabase tables</div><div class="task-detail">Without RLS, any authenticated user can read all other users' health data. This is a critical security failure. Enable and test RLS on every table before any user data is written.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span><span class="task-tag tt-critical">CRITICAL</span></div></div></div>
-        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Create Supabase user table schema"><div class="task-content"><div class="task-text">Design and create Supabase database schema</div><div class="task-detail">Tables: users, check_ins, workouts, completed_exercises, prescribed_exercises, subscriptions. Add subscription_tier field (free | personal | founding_member). One RLS policy per table.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span><span class="task-tag tt-high">HIGH</span></div></div></div>
-        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Set up Netlify serverless webhook function"><div class="task-content"><div class="task-text">Build Netlify serverless webhook (Stripe → Supabase)</div><div class="task-detail">stripe-webhook.js function: receives Stripe events, verifies signature, updates subscription_tier in Supabase. Environment variables: SUPABASE_SERVICE_KEY + STRIPE_WEBHOOK_SECRET. Register in Stripe for 3 events: subscription.created, subscription.updated, subscription.deleted.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span><span class="task-tag tt-high">HIGH</span></div><a href="#ax3" class="task-link">See Annex C: Stripe Setup</a></div></div>
+        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Create Supabase database schema"><div class="task-content"><div class="task-text">Design and create Supabase database schema</div><div class="task-detail">Tables: users, check_ins, workouts, completed_exercises, prescribed_exercises, subscriptions. Add subscription_tier field (free | personal | lifetime_member). One RLS policy per table.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span><span class="task-tag tt-high">HIGH</span></div></div></div>
+        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Build Netlify serverless webhook function"><div class="task-content"><div class="task-text">Build Netlify serverless webhook (Stripe → Supabase)</div><div class="task-detail">stripe-webhook.js function: receives Stripe events, verifies signature, updates subscription_tier in Supabase. Environment variables: SUPABASE_SERVICE_KEY + STRIPE_WEBHOOK_SECRET. Register in Stripe for 3 events: subscription.created, subscription.updated, subscription.deleted.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span><span class="task-tag tt-high">HIGH</span></div><a href="#ax3" class="task-link">See Annex C: Stripe Setup</a></div></div>
         <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Create Sentry account in EU region"><div class="task-content"><div class="task-text">Create Sentry account with EU data storage region selected</div><div class="task-detail">CRITICAL: Region cannot be changed after account creation. Select EU region at sign-up. If you create it in the US, you must delete and start again.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span><span class="task-tag tt-critical">CRITICAL — REGION CANNOT BE CHANGED</span></div></div></div>
-        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Add Plausible analytics script to index.html"><div class="task-content"><div class="task-text">Add Plausible Analytics script tag to index.html</div><div class="task-detail">One line in the &lt;head&gt;. No cookies, no consent banner needed. GDPR-compliant out of the box. Mention in Privacy Policy under analytics.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span></div></div></div>
-        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Set up custom domain"><div class="task-content"><div class="task-text">Buy and configure custom domain (alongside.app or buildnewhabits.co.uk)</div><div class="task-detail">Namecheap ~£6–£12/year. Enable auto-renew. Point to GitHub Pages via CNAME record. Update all service account registrations to use the new domain.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span></div></div></div>
-        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Set up professional email"><div class="task-content"><div class="task-text">Set up professional email address on custom domain</div><div class="task-detail">Zoho Mail (free tier) or Google Workspace (£5/month). hello@alongside.app or graeme@buildnewhabits.co.uk. Update all service registrations.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span></div></div></div>
-        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Configure PWA manifest and icons"><div class="task-content"><div class="task-text">Configure PWA home screen installation</div><div class="task-detail">manifest.json + 512×512 icon + one link tag in index.html. Test "Add to Home Screen" on a real iOS and Android phone.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span></div></div></div>
-        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Run full subscription flow test in Stripe sandbox"><div class="task-content"><div class="task-text">Test full subscription flow end-to-end in Stripe sandbox</div><div class="task-detail">Test: upgrade from free to personal, feature unlock confirmation, cancel subscription, revert to free tier, Founding Member code redemption, webhook delivery confirmation in Stripe dashboard.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span><span class="task-tag tt-high">HIGH</span></div></div></div>
-        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Run WCAG accessibility audit"><div class="task-content"><div class="task-text">Run WCAG accessibility audit</div><div class="task-detail">webaim.org colour contrast checker (4.5:1 minimum ratio). Test text size (16px minimum body). Confirm tap targets are 44×44px minimum. Test with VoiceOver (iOS) and TalkBack (Android). Target: WCAG 2.2 AA compliance.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span><span class="task-tag tt-high">HIGH</span></div></div></div>
+        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Add Plausible analytics to index.html"><div class="task-content"><div class="task-text">Add Plausible Analytics script tag to index.html</div><div class="task-detail">One line in the &lt;head&gt;. No cookies, no consent banner needed. GDPR-compliant out of the box. Mention in Privacy Policy under analytics.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span></div></div></div>
+        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Buy and configure custom domain"><div class="task-content"><div class="task-text">Buy and configure custom domain (alongside.app or buildnewhabits.co.uk)</div><div class="task-detail">Namecheap ~£6–£12/year. Enable auto-renew. Point to GitHub Pages via CNAME record. Update all service account registrations to use the new domain.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span></div></div></div>
+        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Set up professional email on custom domain"><div class="task-content"><div class="task-text">Set up professional email address on custom domain</div><div class="task-detail">Zoho Mail (free tier) or Google Workspace (£5/month). hello@alongside.app or graeme@buildnewhabits.co.uk. Update all service registrations.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span></div></div></div>
+        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Configure PWA home screen installation"><div class="task-content"><div class="task-text">Configure PWA home screen installation with active install prompt</div><div class="task-detail">manifest.json + 512x512 icon + beforeinstallprompt event on Android/Chrome. iOS: primary CTA opens modal with Safari share sheet instructions. Test on a real iPhone AND a real Android phone — do not rely on browser emulation.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span><span class="task-tag tt-high">HIGH</span></div></div></div>
+        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Test full subscription flow in Stripe sandbox"><div class="task-content"><div class="task-text">Test full subscription flow end-to-end in Stripe sandbox</div><div class="task-detail">Test: upgrade from free to personal, feature unlock confirmation, cancel subscription, revert to free tier, LTM code redemption, webhook delivery confirmation in Stripe dashboard.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span><span class="task-tag tt-high">HIGH</span></div></div></div>
+        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Run WCAG accessibility audit"><div class="task-content"><div class="task-text">Run WCAG 2.2 AA accessibility audit</div><div class="task-detail">webaim.org colour contrast checker (4.5:1 minimum ratio). Test text size (16px minimum body). Confirm tap targets are 44x44px minimum. Test with VoiceOver (iOS) and TalkBack (Android). Target: WCAG 2.2 AA compliance.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span><span class="task-tag tt-high">HIGH</span></div></div></div>
         <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Enable 2FA on all service accounts"><div class="task-content"><div class="task-text">Enable two-factor authentication on all service accounts</div><div class="task-detail">Supabase, Stripe, Netlify, Sentry, Plausible, GitHub, domain registrar, email. No exceptions. Use an authenticator app (not SMS where avoidable).</div><div class="task-meta"><span class="task-tag tt-tech">technical</span><span class="task-tag tt-high">HIGH</span></div></div></div>
-        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Verify no secret keys in client-side code"><div class="task-content"><div class="task-text">Audit codebase: confirm no secret keys in client-side code</div><div class="task-detail">Check for any API keys, service role keys, or credentials in JavaScript files that are visible to the browser. Supabase service role key must ONLY exist in the Netlify serverless environment, never in the client app.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span><span class="task-tag tt-critical">CRITICAL — SECURITY</span></div></div></div>
-        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Test data deletion dry run"><div class="task-content"><div class="task-text">Run data deletion dry run (GDPR right to erasure test)</div><div class="task-detail">Create a test user, add data across all tables, then execute the deletion procedure. Verify all data removed from: users, check_ins, workouts, prescribed_exercises, subscriptions. Write and save the procedure document.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span></div></div></div>
+        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Audit codebase for secret keys in client-side code"><div class="task-content"><div class="task-text">Audit codebase: confirm no secret keys in client-side code</div><div class="task-detail">Check for any API keys, service role keys, or credentials in JavaScript files that are visible to the browser. Supabase service role key must ONLY exist in the Netlify serverless environment, never in the client app.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span><span class="task-tag tt-critical">CRITICAL — SECURITY</span></div></div></div>
+        <div class="task-row" data-cat="tech"><input type="checkbox" onchange="toggleTask(this)" aria-label="Run data deletion dry run"><div class="task-content"><div class="task-text">Run data deletion dry run (GDPR right to erasure test)</div><div class="task-detail">Create a test user, add data across all tables, then execute the deletion procedure. Verify all data removed from: users, check_ins, workouts, prescribed_exercises, subscriptions. Write and save the procedure document.</div><div class="task-meta"><span class="task-tag tt-tech">technical</span></div></div></div>
       </div>
     </div>
 
@@ -970,12 +1024,12 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
       <div class="task-section-title">Financial &amp; Business Setup <span class="count" id="cnt-financial"></span></div>
       <div class="task-list" id="tl-financial">
         <div class="task-row" data-cat="financial"><input type="checkbox" onchange="toggleTask(this)" aria-label="Open business bank account"><div class="task-content"><div class="task-text">Open a business bank account</div><div class="task-detail">Tide, Monzo Business, or Starling Business — all free to open. Keeps business and personal finances separate (essential for sole trader accounting and tax returns).</div><div class="task-meta"><span class="task-tag tt-financial">financial</span></div></div></div>
-        <div class="task-row" data-cat="financial"><input type="checkbox" onchange="toggleTask(this)" aria-label="Set up business accounting"><div class="task-content"><div class="task-text">Set up accounting system</div><div class="task-detail">Wave (free) is sufficient for Year 1. At minimum, a spreadsheet tracking all income (Stripe payments) and expenses (subscriptions, domain, legal). Required for annual Self Assessment tax return.</div><div class="task-meta"><span class="task-tag tt-financial">financial</span></div></div></div>
-        <div class="task-row" data-cat="financial"><input type="checkbox" onchange="toggleTask(this)" aria-label="Create Stripe products and pricing"><div class="task-content"><div class="task-text">Create Stripe products and pricing plans</div><div class="task-detail">Three products: Personal Monthly £9.99, Personal Annual £89, Founding Member £49 one-time. Enable Customer Portal for self-service subscription management. Test all in sandbox first.</div><div class="task-meta"><span class="task-tag tt-financial">financial</span><span class="task-tag tt-high">HIGH</span></div><a href="#ax3" class="task-link">See Annex C: Stripe Setup</a></div></div>
-        <div class="task-row" data-cat="financial"><input type="checkbox" onchange="toggleTask(this)" aria-label="Set up auto-renewal disclosure"><div class="task-content"><div class="task-text">Add auto-renewal disclosure to payment flow</div><div class="task-detail">Required by UK Consumer Contracts Regulations. Before first charge, clearly state: "Your subscription will automatically renew at £9.99/month. You can cancel at any time from Settings." This text must appear at the point of purchase.</div><div class="task-meta"><span class="task-tag tt-financial">financial</span><span class="task-tag tt-legal">legal</span></div></div></div>
-        <div class="task-row" data-cat="financial"><input type="checkbox" onchange="toggleTask(this)" aria-label="Write refund policy"><div class="task-content"><div class="task-text">Write and publish refund policy</div><div class="task-detail">UK consumer law requires a minimum 14-day cooling off period for digital subscriptions. Policy must state: within 14 days unused = full refund, within 14 days used = pro-rata, after 14 days = no refund but can cancel. Add to Terms of Service.</div><div class="task-meta"><span class="task-tag tt-financial">financial</span><span class="task-tag tt-legal">legal</span></div></div></div>
-        <div class="task-row" data-cat="financial"><input type="checkbox" onchange="toggleTask(this)" aria-label="Build Founding Member friend code system"><div class="task-content"><div class="task-text">Build Founding Member friend code system in app</div><div class="task-detail">Each Founding Member receives 10 codes. Any user entering a code gets Founding Member pricing (£49 lifetime). Every 5 codes used, original member receives 5 more. Track in Supabase. Phase 3 development task.</div><div class="task-meta"><span class="task-tag tt-financial">financial</span><span class="task-tag tt-tech">technical</span></div></div></div>
-        <div class="task-row" data-cat="financial"><input type="checkbox" onchange="toggleTask(this)" aria-label="Set up MRR tracking"><div class="task-content"><div class="task-text">Set up weekly MRR tracking</div><div class="task-detail">Stripe dashboard + a simple spreadsheet. Track: new subscribers, churned subscribers, MRR, total free users. Review weekly from public launch. Cash-flow positive threshold: 115 paying users at £89/year.</div><div class="task-meta"><span class="task-tag tt-financial">financial</span></div></div></div>
+        <div class="task-row" data-cat="financial"><input type="checkbox" onchange="toggleTask(this)" aria-label="Set up accounting system"><div class="task-content"><div class="task-text">Set up accounting system</div><div class="task-detail">Wave (free) is sufficient for Year 1. At minimum, a spreadsheet tracking all income (Stripe payments) and expenses (subscriptions, domain, legal). Required for annual Self Assessment tax return.</div><div class="task-meta"><span class="task-tag tt-financial">financial</span></div></div></div>
+        <div class="task-row" data-cat="financial"><input type="checkbox" onchange="toggleTask(this)" aria-label="Create Stripe products and pricing plans"><div class="task-content"><div class="task-text">Create Stripe products and pricing plans</div><div class="task-detail">Three products: Personal Monthly £9.99, Personal Annual £89, Lifetime Member (LTM) £49 one-time. Enable Customer Portal for self-service subscription management. Test all in sandbox first.</div><div class="task-meta"><span class="task-tag tt-financial">financial</span><span class="task-tag tt-high">HIGH</span></div><a href="#ax3" class="task-link">See Annex C: Stripe Setup</a></div></div>
+        <div class="task-row" data-cat="financial"><input type="checkbox" onchange="toggleTask(this)" aria-label="Add auto-renewal disclosure to payment flow"><div class="task-content"><div class="task-text">Add auto-renewal disclosure to payment flow</div><div class="task-detail">Required by UK Consumer Contracts Regulations. Before first charge, clearly state: "Your subscription will automatically renew at £9.99/month. You can cancel at any time from Settings." This text must appear at the point of purchase.</div><div class="task-meta"><span class="task-tag tt-financial">financial</span><span class="task-tag tt-legal">legal</span></div></div></div>
+        <div class="task-row" data-cat="financial"><input type="checkbox" onchange="toggleTask(this)" aria-label="Write and publish refund policy"><div class="task-content"><div class="task-text">Write and publish refund policy</div><div class="task-detail">UK consumer law requires a minimum 14-day cooling off period for digital subscriptions. Policy must state: within 14 days unused = full refund, within 14 days used = pro-rata, after 14 days = no refund but can cancel. Add to Terms of Service.</div><div class="task-meta"><span class="task-tag tt-financial">financial</span><span class="task-tag tt-legal">legal</span></div></div></div>
+        <div class="task-row" data-cat="financial"><input type="checkbox" onchange="toggleTask(this)" aria-label="Build LTM friend code system in app"><div class="task-content"><div class="task-text">Build Lifetime Member (LTM) friend code system in app</div><div class="task-detail">Each LTM receives 10 codes. Any user entering a code gets LTM pricing (£49 lifetime). Every 5 codes used, original member receives 5 more. Maximum 50 LTM places total. Track in Supabase. Phase 4 development task.</div><div class="task-meta"><span class="task-tag tt-financial">financial</span><span class="task-tag tt-tech">technical</span></div></div></div>
+        <div class="task-row" data-cat="financial"><input type="checkbox" onchange="toggleTask(this)" aria-label="Set up weekly MRR tracking"><div class="task-content"><div class="task-text">Set up weekly MRR tracking</div><div class="task-detail">Stripe dashboard + a simple spreadsheet. Track: new subscribers, churned subscribers, MRR, total free users. Review weekly from public launch. Cash-flow positive threshold: 115 paying users at £89/year.</div><div class="task-meta"><span class="task-tag tt-financial">financial</span></div></div></div>
       </div>
     </div>
 
@@ -983,16 +1037,16 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
     <div class="task-section" data-category="marketing">
       <div class="task-section-title">Marketing &amp; Community <span class="count" id="cnt-marketing"></span></div>
       <div class="task-list" id="tl-marketing">
-        <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Build landing page for email capture"><div class="task-content"><div class="task-text">Build and launch landing page with email capture form</div><div class="task-detail">Live at custom domain. Formspree form submitting to buildnewhabits@outlook.com. Privacy Policy + ToS in footer. Auto-reply welcome email configured. Test on mobile phone.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span><span class="task-tag tt-high">HIGH</span></div></div></div>
+        <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Build landing page with email capture"><div class="task-content"><div class="task-text">Build and launch landing page with email capture form</div><div class="task-detail">Live at custom domain. Formspree form submitting to buildnewhabits@outlook.com. Privacy Policy + ToS in footer. Auto-reply welcome email configured. Test on mobile phone.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span><span class="task-tag tt-high">HIGH</span></div></div></div>
         <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Create Reddit account"><div class="task-content"><div class="task-text">Create Reddit account with a real, identifiable username</div><div class="task-detail">Not anonymous. People need to associate your username with genuine helpfulness over time. Join: r/ADHD, r/adhdwomen, r/autism, r/laterdiagnosed, r/perimenopause, r/Menopause, r/ChronicPain, r/xxfitness.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span></div></div></div>
-        <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Complete community lurk phase"><div class="task-content"><div class="task-text">Complete 2–4 week genuine community participation phase (no promotion)</div><div class="task-detail">Answer questions. Share personal experiences. Be helpful and honest. Do not mention Alongside yet. One community per day maximum. Respond to every reply personally. Document exact words people use — this becomes your marketing language.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span><span class="task-tag tt-high">HIGH</span></div><a href="#ax5" class="task-link">See Annex E: Community Post Templates</a></div></div>
+        <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Complete community participation phase"><div class="task-content"><div class="task-text">Complete 2–4 week genuine community participation phase (no promotion)</div><div class="task-detail">Answer questions. Share personal experiences. Be helpful and honest. Do not mention Alongside yet. One community per day maximum. Respond to every reply personally. Document exact words people use — this becomes your marketing language.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span><span class="task-tag tt-high">HIGH</span></div><a href="#ax5" class="task-link">See Annex E: Community Post Templates</a></div></div>
         <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Post in own professional network first"><div class="task-content"><div class="task-text">Post about Alongside in own professional network first (Weston College contacts)</div><div class="task-detail">Lowest-risk audience. Use their feedback to refine the message before posting in larger communities. Note what resonates and what confuses.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span></div></div></div>
-        <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Identify 5-10 potential founding member candidates from community conversations"><div class="task-content"><div class="task-text">Identify 5–10 potential Founding Member candidates from community conversations</div><div class="task-detail">The people who write paragraphs in response to your questions. Ask: "Would you be willing to have a 20-minute chat? I'm trying to understand this properly before I build anything." These are your founding member pipeline.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span></div></div></div>
+        <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Identify 5-10 potential LTM candidates"><div class="task-content"><div class="task-text">Identify 5–10 potential Lifetime Member (LTM) candidates from community conversations</div><div class="task-detail">The people who write paragraphs in response to your questions. Ask: "Would you be willing to have a 20-minute chat? I'm trying to understand this properly before I build anything." These are your LTM pipeline.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span></div></div></div>
         <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Have 5+ one-to-one conversations with potential users"><div class="task-content"><div class="task-text">Have 5+ one-to-one conversations with potential users (20 minutes each)</div><div class="task-detail">Validate: does "fluctuating energy" come up unprompted? Do people describe app failure in their own words? Is psychological safety named as a need? Target: 40%+ of conversations mention fluctuating energy without prompting.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span><span class="task-tag tt-high">HIGH</span></div></div></div>
-        <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Post community announcement about Alongside"><div class="task-content"><div class="task-text">Post community announcement about Alongside (only after community trust built)</div><div class="task-detail">Structure: personal story → human problem → what you built → Founding Member offer. Stay in comments for hours. Respond to every question. Post time: weekday evening 7–9pm UTC.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span></div><a href="#ax5" class="task-link">See Annex E for post template</a></div></div>
-        <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Set up TikTok or Instagram content channel"><div class="task-content"><div class="task-text">Set up TikTok or Instagram content channel</div><div class="task-detail">Content pillar: "Why fitness apps fail people like us." Lead with empathy, not product features. 3–5 pieces of genuine educational/empathetic content before any product mention. Consistent posting schedule.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span></div></div></div>
-        <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Follow up with Alex at Somerset Innovation Hub"><div class="task-content"><div class="task-text">Follow up with Alex at Somerset Innovation Hub for 1:1 support session</div><div class="task-detail">Confirmed connection from Innovation Workout (27 Feb 2026). Request a 1:1 to discuss: business model validation, investor/grant connections, EdTech and neurodivergent health network access.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span></div></div></div>
-        <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Collect first user testimonials"><div class="task-content"><div class="task-text">Collect first user testimonials from Founding Members</div><div class="task-detail">Ask after 2–3 weeks of active use. Ask specifically: "In your own words, what's different about how this app treats you?" These testimonials become the most powerful marketing asset.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span></div></div></div>
+        <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Post community announcement about Alongside"><div class="task-content"><div class="task-text">Post community announcement about Alongside (only after community trust built)</div><div class="task-detail">Structure: personal story → human problem → what you built → LTM offer. Stay in comments for hours. Respond to every question. Post time: weekday evening 7–9pm UTC.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span></div><a href="#ax5" class="task-link">See Annex E for post template</a></div></div>
+        <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Set up TikTok or Instagram channel"><div class="task-content"><div class="task-text">Set up TikTok or Instagram content channel</div><div class="task-detail">Content pillar: "Why fitness apps fail people like us." Lead with empathy, not product features. 3–5 pieces of genuine educational/empathetic content before any product mention. Consistent posting schedule.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span></div></div></div>
+        <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Follow up with Alex at Somerset Innovation Hub"><div class="task-content"><div class="task-text">Follow up with Alex at Somerset Innovation Hub — Business Expansion Programme</div><div class="task-detail">Initial meeting held 17 March 2026. Next steps: Exeter University research partnership conversation, BEP route with Colin Dart (target October 2026). Keep Alex updated on community research progress.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span></div></div></div>
+        <div class="task-row" data-cat="marketing"><input type="checkbox" onchange="toggleTask(this)" aria-label="Collect first user testimonials from LTMs"><div class="task-content"><div class="task-text">Collect first user testimonials from Lifetime Members</div><div class="task-detail">Ask after 2–3 weeks of active use. Ask specifically: "In your own words, what's different about how this app treats you?" These testimonials become the most powerful marketing asset.</div><div class="task-meta"><span class="task-tag tt-marketing">marketing</span></div></div></div>
       </div>
     </div>
 
@@ -1000,13 +1054,13 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
     <div class="task-section" data-category="operational">
       <div class="task-section-title">Operational &amp; Content <span class="count" id="cnt-operational"></span></div>
       <div class="task-list" id="tl-operational">
-        <div class="task-row" data-cat="operational"><input type="checkbox" onchange="toggleTask(this)" aria-label="Write ethics and philosophy page"><div class="task-content"><div class="task-text">Develop ethics and philosophy page on website</div><div class="task-detail">Four sections: why data is collected and what for, ethical commitments and design principles, evidence base for the problems Alongside addresses, how Alongside challenges standard app-building norms. Phase 3B — after Founding Member stories are available for impact.</div><div class="task-meta"><span class="task-tag tt-operational">content</span></div><a href="#s14" class="task-link">See Section 14: Ethical Commitments</a></div></div>
-        <div class="task-row" data-cat="operational"><input type="checkbox" onchange="toggleTask(this)" aria-label="Add Privacy Policy and Terms of Service to landing page footer"><div class="task-content"><div class="task-text">Add Privacy Policy and Terms of Service links to landing page footer</div><div class="task-detail">Both documents must be linked from the landing page. Users should be able to read both before signing up for the email list. Required under GDPR even for email capture forms.</div><div class="task-meta"><span class="task-tag tt-operational">operational</span><span class="task-tag tt-legal">legal</span></div></div></div>
-        <div class="task-row" data-cat="operational"><input type="checkbox" onchange="toggleTask(this)" aria-label="Write and test welcome email auto-reply"><div class="task-content"><div class="task-text">Write and test welcome email auto-reply for email list signups</div><div class="task-detail">Warm, personal tone. What Alongside is. What to expect next. When beta will open. No sales language. Include unsubscribe link (legal requirement for commercial emails under PECR).</div><div class="task-meta"><span class="task-tag tt-operational">operational</span></div></div></div>
-        <div class="task-row" data-cat="operational"><input type="checkbox" onchange="toggleTask(this)" aria-label="Create structured Founding Member feedback system"><div class="task-content"><div class="task-text">Create structured Founding Member feedback collection system</div><div class="task-detail">Short weekly check-in (3–5 questions). What worked. What was frustrating. What they wish existed. Could be a simple Formspree form or Google Form. Review responses every Friday and identify top 3 patterns.</div><div class="task-meta"><span class="task-tag tt-operational">operational</span></div></div></div>
-        <div class="task-row" data-cat="operational"><input type="checkbox" onchange="toggleTask(this)" aria-label="Prepare grant application research"><div class="task-content"><div class="task-text">Research grant funding for neurodivergent health tech and EdTech</div><div class="task-detail">Innovate UK, Arts Council (digital culture), NIHR (health innovation), Somerset Council local enterprise funding. Target: after Alongside reaches sustainable subscription revenue and has a user data evidence base.</div><div class="task-meta"><span class="task-tag tt-operational">operational</span></div></div></div>
-        <div class="task-row" data-cat="operational"><input type="checkbox" onchange="toggleTask(this)" aria-label="Prepare Weston College Student Life Hub conversation"><div class="task-content"><div class="task-text">Prepare Weston College Student Life Hub pilot conversation</div><div class="task-detail">Only after Alongside has validated the adaptive engine (Phase 3+). Build a short briefing: what the Student Life Hub is, what the pilot would involve, what metrics we'd measure, what it costs (potentially free in exchange for data). See business plan for institutional pitch content.</div><div class="task-meta"><span class="task-tag tt-operational">operational</span></div></div></div>
-        <div class="task-row" data-cat="operational"><input type="checkbox" onchange="toggleTask(this)" aria-label="Update build tracker after Phase 3 completion"><div class="task-content"><div class="task-text">Generate Phase 3 handoff document and update Project Files</div><div class="task-detail">At end of Phase 3: generate alongside_phase3_handoff.docx. Update changelog.md and schema.md. Review which Project Files are stale and replace. Add new docs to Claude Project Files.</div><div class="task-meta"><span class="task-tag tt-operational">operational</span></div></div></div>
+        <div class="task-row" data-cat="operational"><input type="checkbox" onchange="toggleTask(this)" aria-label="Develop ethics and philosophy page"><div class="task-content"><div class="task-text">Develop ethics and philosophy page on website</div><div class="task-detail">Four sections: why data is collected and what for, ethical commitments and design principles, evidence base for the problems Alongside addresses, how Alongside challenges standard app-building norms. Phase 3B — after LTM stories are available for impact.</div><div class="task-meta"><span class="task-tag tt-operational">content</span></div><a href="#s14" class="task-link">See Section 14: Ethical Commitments</a></div></div>
+        <div class="task-row" data-cat="operational"><input type="checkbox" onchange="toggleTask(this)" aria-label="Add Privacy Policy and ToS to landing page footer"><div class="task-content"><div class="task-text">Add Privacy Policy and Terms of Service links to landing page footer</div><div class="task-detail">Both documents must be linked from the landing page. Users should be able to read both before signing up for the email list. Required under GDPR even for email capture forms.</div><div class="task-meta"><span class="task-tag tt-operational">operational</span><span class="task-tag tt-legal">legal</span></div></div></div>
+        <div class="task-row" data-cat="operational"><input type="checkbox" onchange="toggleTask(this)" aria-label="Write and test welcome email auto-reply"><div class="task-content"><div class="task-text">Write and test welcome email auto-reply for email list signups</div><div class="task-detail">Warm, personal tone. What Alongside is. What to expect next. When beta will open (June 2026). No sales language. Include unsubscribe link (legal requirement for commercial emails under PECR).</div><div class="task-meta"><span class="task-tag tt-operational">operational</span></div></div></div>
+        <div class="task-row" data-cat="operational"><input type="checkbox" onchange="toggleTask(this)" aria-label="Create LTM feedback collection system"><div class="task-content"><div class="task-text">Create structured Lifetime Member feedback collection system</div><div class="task-detail">Short weekly check-in (3–5 questions). What worked. What was frustrating. What they wish existed. Could be a simple Formspree form or Google Form. Review responses every Friday and identify top 3 patterns.</div><div class="task-meta"><span class="task-tag tt-operational">operational</span></div></div></div>
+        <div class="task-row" data-cat="operational"><input type="checkbox" onchange="toggleTask(this)" aria-label="Research grant funding"><div class="task-content"><div class="task-text">Research grant funding for neurodivergent health tech and EdTech</div><div class="task-detail">Innovate UK, Arts Council (digital culture), NIHR (health innovation), Somerset Council local enterprise funding. Target: after Alongside reaches sustainable subscription revenue and has a user data evidence base.</div><div class="task-meta"><span class="task-tag tt-operational">operational</span></div></div></div>
+        <div class="task-row" data-cat="operational"><input type="checkbox" onchange="toggleTask(this)" aria-label="Prepare Weston College Alongside: Life pilot conversation"><div class="task-content"><div class="task-text">Prepare Weston College Alongside: Life pilot conversation</div><div class="task-detail">Only after Alongside: Move has validated the adaptive engine and reached public launch. Build a short briefing: what Alongside: Life is, what the pilot would involve, what metrics we'd measure, what it costs (potentially free in exchange for data).</div><div class="task-meta"><span class="task-tag tt-operational">operational</span></div></div></div>
+        <div class="task-row" data-cat="operational"><input type="checkbox" onchange="toggleTask(this)" aria-label="Generate Phase 3 handoff and update Project Files"><div class="task-content"><div class="task-text">Generate Phase 3 handoff document and update Project Files</div><div class="task-detail">At end of Phase 3 (by 20 April 2026): generate alongside_phase3_handoff.docx. Update changelog.md and schema.md. Review which Project Files are stale and replace. Add new docs to Claude Project Files.</div><div class="task-meta"><span class="task-tag tt-operational">operational</span></div></div></div>
       </div>
     </div>
   </div>
@@ -1118,8 +1172,9 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
       <p>The Personal subscription is available at £9.99 per month or £89.00 per year. The annual plan represents a saving compared to twelve monthly payments. You may switch between monthly and annual billing at any renewal date.</p>
       <h4>Auto-renewal</h4>
       <p><strong>Your subscription will automatically renew at the end of each billing period unless you cancel before the renewal date.</strong> Monthly subscriptions renew each month. Annual subscriptions renew each year. You will receive an email reminder 7 days before each annual renewal. You can cancel at any time from within the app under Settings → Subscription.</p>
-      <h4>Founding Member</h4>
-      <p>The Founding Member tier is a lifetime membership available during the beta period for a one-time payment of £49. This price is locked for life: your access will never be restricted to free tier features and your price will never increase. The Founding Member tier may be discontinued for new sign-ups at any time but existing Founding Members retain lifetime access.</p>
+      <!-- UPDATED: Founding Member → Lifetime Member (LTM) -->
+      <h4>Lifetime Member (LTM)</h4>
+      <p>The Lifetime Member tier is a lifetime membership available during the beta period (June–August 2026) for a one-time payment of £49. This price is locked for life: your access will never be restricted to free tier features and your price will never increase. The Lifetime Member tier is capped at 50 places and may be discontinued for new sign-ups at any time, but existing Lifetime Members retain lifetime access.</p>
       <h4>Refund policy</h4>
       <p>Under UK Consumer Contracts Regulations, you have the right to cancel and receive a full refund within 14 days of purchase, unless you have actively used the subscription during that period. If you have used the service, we will apply a pro-rata refund for unused days. After 14 days, subscriptions are non-refundable but you may cancel at any time to prevent future renewals. If a technical fault prevented you from using the service, contact us at buildnewhabits@outlook.com for a full refund.</p>
 
@@ -1177,7 +1232,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
 
       <h3>Tick Box Wording (display verbatim)</h3>
       <div style="background:var(--white);border:2px solid var(--teal);border-radius:var(--radius);padding:20px 24px;margin:16px 0;display:flex;gap:14px;align-items:flex-start">
-        <div style="width:20px;height:20px;border:2px solid var(--border);border-radius:4px;flex-shrink:0;margin-top:2px"></div>
+        <div style="width:20px;height:20px;border:2px solid var(--border);border-radius:4px;flex-shrink:0;margin-top:2px" role="presentation"></div>
         <p style="font-size:0.88rem;color:var(--dark);line-height:1.65">I understand that Alongside will collect health-related information including my conditions, pain levels, mood, and energy to provide personalised fitness coaching. I give my explicit consent for this. I can withdraw consent and delete all my data at any time from Settings. I have read the <a href="/privacy" style="color:var(--teal);text-decoration:underline">Privacy Policy</a> and <a href="/terms" style="color:var(--teal);text-decoration:underline">Terms of Service</a>.</p>
       </div>
 
@@ -1211,7 +1266,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
 
     <div class="ethics-grid" style="margin:24px 0">
       <div class="ethics-never">
-        <h4>✗ We Will NEVER</h4>
+        <h4>We Will NEVER</h4>
         <ul style="padding-left:0">
           <li class="commitment-item"><span class="ci-icon" aria-hidden="true">✗</span><span class="ci-text">Use streak mechanics that create shame on a missed day</span></li>
           <li class="commitment-item"><span class="ci-icon" aria-hidden="true">✗</span><span class="ci-text">Implement social comparison features or leaderboards</span></li>
@@ -1226,7 +1281,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
         </ul>
       </div>
       <div class="ethics-always">
-        <h4>✓ We Will ALWAYS</h4>
+        <h4>We Will ALWAYS</h4>
         <ul style="padding-left:0">
           <li class="commitment-item"><span class="ci-icon" aria-hidden="true">✓</span><span class="ci-text">Validate low energy, low mood, and pain as legitimate states</span></li>
           <li class="commitment-item"><span class="ci-icon" aria-hidden="true">✓</span><span class="ci-text">Provide transparent rationale for every exercise recommendation</span></li>
@@ -1288,8 +1343,8 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
     <div class="strategy-grid">
       <div class="strategy-card"><div class="sc-num">Week 1–2</div><h3>Lurk and Listen</h3><p>Read each community for 20 minutes before posting. Understand what they care about, what language they use, what frustrates them. Do not post yet.</p></div>
       <div class="strategy-card"><div class="sc-num">Week 2–4</div><h3>Contribute Genuinely</h3><p>Answer questions. Share personal experience. Be helpful and honest. One community per day maximum. Respond to every reply personally.</p></div>
-      <div class="strategy-card"><div class="sc-num">Week 3–4</div><h3>Identify Founding Member Candidates</h3><p>The people who write paragraphs in their replies. Ask: "Would you be willing to have a 20-minute conversation?" Document exact language they use — this becomes your marketing copy.</p></div>
-      <div class="strategy-card"><div class="sc-num">Week 4–5</div><h3>Post About Alongside</h3><p>Only after genuine presence is established. Structure: personal story → human problem → what you built → Founding Member offer. Stay in comments for 3+ hours.</p></div>
+      <div class="strategy-card"><div class="sc-num">Week 3–4</div><h3>Identify LTM Candidates</h3><p>The people who write paragraphs in their replies. Ask: "Would you be willing to have a 20-minute conversation?" Document exact language they use — this becomes your marketing copy.</p></div>
+      <div class="strategy-card"><div class="sc-num">Week 4–5</div><h3>Post About Alongside</h3><p>Only after genuine presence is established. Structure: personal story → human problem → what you built → LTM offer. Stay in comments for 3+ hours.</p></div>
     </div>
 
     <h3 style="font-family:var(--serif);font-size:1.1rem;margin:28px 0 14px;color:var(--dark)">Validation Targets</h3>
@@ -1301,7 +1356,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
         <tr><td>People say they wanted to continue but the app didn't help them</td><td>Majority of responses</td></tr>
         <tr><td>Psychological safety named as a need</td><td>At least 5 people name this explicitly</td></tr>
         <tr><td>People willing to have a deeper conversation</td><td>5+ within 4 weeks</td></tr>
-        <tr><td>People interested in shaping the product</td><td>Founding Member pipeline begins</td></tr>
+        <tr><td>People interested in shaping the product</td><td>LTM pipeline begins</td></tr>
       </tbody>
     </table>
   </div>
@@ -1364,20 +1419,21 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
   </div>
 </section>
 
-<!-- ═══ SECTION 17: FOUNDING MEMBER STRATEGY ═══ -->
+<!-- ═══ SECTION 17: LIFETIME MEMBER STRATEGY ═══ -->
+<!-- UPDATED: Founding Member → Lifetime Member (LTM); cap of 50 places added throughout -->
 <section id="s17" aria-labelledby="s17-title">
   <div class="section-header">
     <div class="sh-num">Section 17</div>
-    <h2 class="sh-title" id="s17-title">Founding Member Strategy</h2>
-    <p class="sh-desc">The friend code system, recruitment approach, feedback structure, and conversion model.</p>
+    <h2 class="sh-title" id="s17-title">Lifetime Member Strategy</h2>
+    <p class="sh-desc">The LTM friend code system, the 50-place cap, recruitment approach, feedback structure, and conversion model.</p>
   </div>
   <div class="page">
     <div class="two-col">
       <div class="card card-teal">
-        <div class="card-h">What Founding Members Get</div>
-        <ul class="inline-list">
-          <li>3 months free — full unlimited access</li>
-          <li>Option to convert to lifetime membership for £49</li>
+        <div class="card-h">What Lifetime Members Get</div>
+        <ul class="inline-list" style="margin-top:8px">
+          <li>Full unlimited access during beta (June–August 2026)</li>
+          <li>Lifetime membership for £49 — price locked forever</li>
           <li>10 friend codes to share at the same pricing</li>
           <li>Real input into product direction through feedback cycles</li>
           <li>Named in acknowledgements (optional)</li>
@@ -1385,8 +1441,8 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
         </ul>
       </div>
       <div class="card card-coral">
-        <div class="card-h">What We Get From Founding Members</div>
-        <ul class="inline-list">
+        <div class="card-h">What We Get From Lifetime Members</div>
+        <ul class="inline-list" style="margin-top:8px">
           <li>Real usage data from the target audience</li>
           <li>Weekly structured feedback (what worked, what frustrated)</li>
           <li>Community amplification through friend codes</li>
@@ -1397,21 +1453,26 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
       </div>
     </div>
 
+    <div class="highlight-box amber" style="margin-top:4px">
+      <h4>LTM Cap: Maximum 50 Places</h4>
+      <p>The Lifetime Member tier is deliberately capped at 50 places. This is not a scarcity tactic — it reflects the genuine capacity to provide personalised feedback engagement and maintain the quality of the beta relationship. LTMs commit to regular structured feedback; not all suggestions will be adopted, but every voice will be heard.</p>
+    </div>
+
     <h3 style="font-family:var(--serif);font-size:1.1rem;margin:28px 0 14px;color:var(--dark)">Friend Code System</h3>
     <table class="data-table">
       <thead><tr><th>Mechanic</th><th>Detail</th></tr></thead>
       <tbody>
-        <tr><td>Initial allocation</td><td>Each Founding Member receives 10 unique codes at sign-up</td></tr>
-        <tr><td>Code value</td><td>Any user entering a code gets Founding Member pricing (£49 lifetime) — the same deal the original member got</td></tr>
+        <tr><td>Initial allocation</td><td>Each Lifetime Member receives 10 unique codes at sign-up</td></tr>
+        <tr><td>Code value</td><td>Any user entering a code gets LTM pricing (£49 lifetime) — the same deal the original member got</td></tr>
         <tr><td>Bonus mechanism</td><td>Every 5 codes used by others, the original member receives 5 more codes to share</td></tr>
-        <tr><td>Viral effect</td><td>Each Founding Member can generate an unlimited number of additional Founding Members given enough sharing and amplification</td></tr>
-        <tr><td>Community incentive</td><td>Founding Members have financial and community reasons to share with people they believe would genuinely benefit — natural filter for the right audience</td></tr>
+        <tr><td>Overall cap</td><td>Total LTM places globally capped at 50. Once 50 places are filled, no further codes can be redeemed.</td></tr>
+        <tr><td>Community incentive</td><td>LTMs have financial and community reasons to share with people they believe would genuinely benefit — natural filter for the right audience</td></tr>
       </tbody>
     </table>
 
     <div class="highlight-box">
       <h4>Why This Works</h4>
-      <p>The friend code system creates a trusted peer-referral channel inside communities that are inherently resistant to advertising. A Founding Member sharing a code with their ADHD community is a trusted peer recommendation — vastly more effective than any paid acquisition channel. The shared pricing incentivises sharing within the right communities.</p>
+      <p>The friend code system creates a trusted peer-referral channel inside communities that are inherently resistant to advertising. A Lifetime Member sharing a code with their ADHD community is a trusted peer recommendation — vastly more effective than any paid acquisition channel. The shared pricing incentivises sharing within the right communities, while the 50-place cap maintains the depth of the beta relationship.</p>
     </div>
   </div>
 </section>
@@ -1425,7 +1486,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
   </div>
   <div class="page-narrow">
     <div class="card card-coral">
-      <div class="card-h">⚠️ Do These Before Anything Else</div>
+      <div class="card-h">Do These Before Anything Else</div>
       <p class="card-p">ICO registration must be completed before any real user health data is collected. HMRC registration must be completed before any commercial revenue is received. Both are legal requirements. Both are simple to do.</p>
     </div>
 
@@ -1458,7 +1519,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
   </div>
   <div class="page-narrow">
     <div class="card card-coral">
-      <div class="card-h">⚠️ Region Cannot Be Changed After Creation</div>
+      <div class="card-h">Region Cannot Be Changed After Creation</div>
       <p class="card-p">You must select an EU region when creating your Supabase project. This cannot be changed after the project is created. If you get this wrong, you must delete the project and start again. Select eu-west-1 (Ireland) or eu-central-1 (Frankfurt).</p>
     </div>
 
@@ -1469,8 +1530,8 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
       <li style="font-size:0.87rem;color:var(--mid);margin-bottom:10px;line-height:1.6">Go to Settings → Legal Documents → Data Processing Agreement. Click "Accept DPA." This makes Supabase your legal data processor under UK GDPR.</li>
       <li style="font-size:0.87rem;color:var(--mid);margin-bottom:10px;line-height:1.6">In the SQL editor, create your tables (users, check_ins, workouts, prescribed_exercises, subscriptions).</li>
       <li style="font-size:0.87rem;color:var(--mid);margin-bottom:10px;line-height:1.6"><strong style="color:var(--dark)">Enable Row-Level Security on EVERY table.</strong> In Supabase: Authentication → Policies → Enable RLS. Without this, any authenticated user can read all other users' health data. Test this before going live.</li>
-      <li style="font-size:0.87rem;color:var(--mid);margin-bottom:10px;line-height:1.6">Add a subscription_tier column to the users table: type text, default 'free', check constraint in ('free', 'personal', 'founding_member').</li>
-      <li style="font-size:0.87rem;color:var(--mid);margin-bottom:10px;line-height:1.6">Upgrade to Supabase Pro (~£25/month) when the first Founding Member is onboarded. Free tier does not include point-in-time recovery or guaranteed uptime.</li>
+      <li style="font-size:0.87rem;color:var(--mid);margin-bottom:10px;line-height:1.6">Add a subscription_tier column to the users table: type text, default 'free', check constraint in ('free', 'personal', 'lifetime_member').</li>
+      <li style="font-size:0.87rem;color:var(--mid);margin-bottom:10px;line-height:1.6">Upgrade to Supabase Pro (~£25/month) when the first Lifetime Member is onboarded. Free tier does not include point-in-time recovery or guaranteed uptime.</li>
     </ol>
   </div>
 </section>
@@ -1485,7 +1546,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
     <ol style="padding-left:20px">
       <li style="font-size:0.87rem;color:var(--mid);margin-bottom:12px;line-height:1.6">Create a Stripe account at stripe.com. Enable 2FA immediately.</li>
       <li style="font-size:0.87rem;color:var(--mid);margin-bottom:12px;line-height:1.6"><strong style="color:var(--dark)">Accept the DPA:</strong> Dashboard → Settings → Data Processing Agreement → Accept. Required before processing UK/EU customer data.</li>
-      <li style="font-size:0.87rem;color:var(--mid);margin-bottom:12px;line-height:1.6">Create three products in the Stripe Dashboard (Products section):<br>— Personal Monthly: £9.99/month, recurring<br>— Personal Annual: £89.00/year, recurring<br>— Founding Member: £49.00, one-time</li>
+      <li style="font-size:0.87rem;color:var(--mid);margin-bottom:12px;line-height:1.6">Create three products in the Stripe Dashboard (Products section):<br>— Personal Monthly: £9.99/month, recurring<br>— Personal Annual: £89.00/year, recurring<br>— Lifetime Member (LTM): £49.00, one-time</li>
       <li style="font-size:0.87rem;color:var(--mid);margin-bottom:12px;line-height:1.6">Enable the Customer Portal: Dashboard → Settings → Billing → Customer Portal. Users can self-manage their subscriptions here. Essential for right-to-cancellation compliance.</li>
       <li style="font-size:0.87rem;color:var(--mid);margin-bottom:12px;line-height:1.6">Set up the Netlify webhook function (stripe-webhook.js). The function must: verify the Stripe signature header, parse the event type, update the subscription_tier field in Supabase accordingly. Environment variables needed: STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, SUPABASE_SERVICE_ROLE_KEY.</li>
       <li style="font-size:0.87rem;color:var(--mid);margin-bottom:12px;line-height:1.6">Register the webhook in Stripe: Dashboard → Developers → Webhooks → Add endpoint. Subscribe to: customer.subscription.created, customer.subscription.updated, customer.subscription.deleted.</li>
@@ -1498,7 +1559,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
   <div class="section-header" style="background:linear-gradient(135deg,#2A3A3A,#3A5A5A)">
     <div class="sh-num">Annex D</div>
     <h2 class="sh-title" id="ax4-title">Pre-Launch GDPR Security Checklist</h2>
-    <p class="sh-desc">Every compliance and security item that must be confirmed before the first Founding Member is onboarded.</p>
+    <p class="sh-desc">Every compliance and security item that must be confirmed before the first Lifetime Member is onboarded.</p>
   </div>
   <div class="page-narrow">
     <table class="data-table">
@@ -1506,20 +1567,20 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
       <tbody>
         <tr><td><input type="checkbox" aria-label="Supabase EU region confirmed"></td><td>Supabase project created in EU region (Ireland or Frankfurt)</td><td>GDPR requires EU data residency for UK/EU user data</td></tr>
         <tr><td><input type="checkbox" aria-label="Supabase DPA signed"></td><td>Supabase DPA signed in dashboard</td><td>Makes Supabase your legal data processor under UK GDPR</td></tr>
-        <tr><td><input type="checkbox" aria-label="Supabase RLS enabled"></td><td>Row-Level Security enabled and tested on ALL tables</td><td>Without RLS, any user can read all other users' health data</td></tr>
+        <tr><td><input type="checkbox" aria-label="RLS enabled on all tables"></td><td>Row-Level Security enabled and tested on ALL tables</td><td>Without RLS, any user can read all other users' health data</td></tr>
         <tr><td><input type="checkbox" aria-label="Stripe DPA accepted"></td><td>Stripe DPA accepted in dashboard settings</td><td>Required for processing EU/UK payment data</td></tr>
-        <tr><td><input type="checkbox" aria-label="Webhook signature verified"></td><td>Netlify webhook verifies Stripe signature in code</td><td>Prevents fake "payment succeeded" events</td></tr>
-        <tr><td><input type="checkbox" aria-label="Sentry EU region"></td><td>Sentry account created with EU data storage region selected</td><td>Cannot be changed after creation — EU required for GDPR</td></tr>
+        <tr><td><input type="checkbox" aria-label="Netlify webhook signature verified"></td><td>Netlify webhook verifies Stripe signature in code</td><td>Prevents fake "payment succeeded" events</td></tr>
+        <tr><td><input type="checkbox" aria-label="Sentry EU region selected"></td><td>Sentry account created with EU data storage region selected</td><td>Cannot be changed after creation — EU required for GDPR</td></tr>
         <tr><td><input type="checkbox" aria-label="Sentry DPA signed"></td><td>Sentry DPA signed in account settings</td><td>Sentry processes app data on your behalf under a legal agreement</td></tr>
-        <tr><td><input type="checkbox" aria-label="Sentry scrubbing configured"></td><td>Sentry data scrubbing configured with health data patterns</td><td>Health information must never appear in error logs</td></tr>
+        <tr><td><input type="checkbox" aria-label="Sentry health data scrubbing configured"></td><td>Sentry data scrubbing configured with health data patterns</td><td>Health information must never appear in error logs</td></tr>
         <tr><td><input type="checkbox" aria-label="Privacy Policy live"></td><td>Privacy Policy written, reviewed, and live on app and landing page</td><td>UK GDPR legal requirement before collecting any data</td></tr>
-        <tr><td><input type="checkbox" aria-label="Sub-processors listed"></td><td>Privacy Policy lists: Supabase, Stripe, Sentry, Plausible as sub-processors</td><td>GDPR transparency requirement</td></tr>
-        <tr><td><input type="checkbox" aria-label="Health data named as special category"></td><td>Privacy Policy explicitly identifies health data as special category</td><td>Required for lawful processing of sensitive health data</td></tr>
-        <tr><td><input type="checkbox" aria-label="Consent screen built"></td><td>Consent screen built with empty tick box, Privacy Policy and ToS links, timestamp recording</td><td>Lawful basis for special category data is explicit consent</td></tr>
-        <tr><td><input type="checkbox" aria-label="Data deletion available"></td><td>User data deletion mechanism working and tested</td><td>GDPR Article 17 — right to erasure</td></tr>
-        <tr><td><input type="checkbox" aria-label="ICO registered"></td><td>ICO data controller registration completed (£40/year)</td><td>Legal requirement for UK businesses processing personal data</td></tr>
-        <tr><td><input type="checkbox" aria-label="No secret keys in client code"></td><td>No secret API keys present in client-side JavaScript</td><td>Service role keys exposed in browser = complete data breach</td></tr>
-        <tr><td><input type="checkbox" aria-label="2FA on all accounts"></td><td>2FA enabled on all service accounts</td><td>Basic account security — required for all accounts handling user data</td></tr>
+        <tr><td><input type="checkbox" aria-label="Sub-processors listed in Privacy Policy"></td><td>Privacy Policy lists: Supabase, Stripe, Sentry, Plausible as sub-processors</td><td>GDPR transparency requirement</td></tr>
+        <tr><td><input type="checkbox" aria-label="Health data identified as special category"></td><td>Privacy Policy explicitly identifies health data as special category</td><td>Required for lawful processing of sensitive health data</td></tr>
+        <tr><td><input type="checkbox" aria-label="Consent screen built with empty tick box"></td><td>Consent screen built with empty tick box, Privacy Policy and ToS links, timestamp recording</td><td>Lawful basis for special category data is explicit consent</td></tr>
+        <tr><td><input type="checkbox" aria-label="Data deletion mechanism working"></td><td>User data deletion mechanism working and tested</td><td>GDPR Article 17 — right to erasure</td></tr>
+        <tr><td><input type="checkbox" aria-label="ICO registration completed"></td><td>ICO data controller registration completed (£40/year)</td><td>Legal requirement for UK businesses processing personal data</td></tr>
+        <tr><td><input type="checkbox" aria-label="No secret keys in client-side code"></td><td>No secret API keys present in client-side JavaScript</td><td>Service role keys exposed in browser = complete data breach</td></tr>
+        <tr><td><input type="checkbox" aria-label="2FA enabled on all accounts"></td><td>2FA enabled on all service accounts</td><td>Basic account security — required for all accounts handling user data</td></tr>
       </tbody>
     </table>
   </div>
@@ -1533,13 +1594,13 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
   </div>
   <div class="page-narrow">
     <div class="card card-amber">
-      <div class="card-h">⚠️ Only Use After 2–4 Weeks of Genuine Community Participation</div>
+      <div class="card-h">Only Use After 2–4 Weeks of Genuine Community Participation</div>
       <p class="card-p">Do not post these on day one. Build genuine presence first. People in these communities will check your posting history. 2–4 weeks of genuinely helpful posts before any product mention is not optional — it is what makes this work.</p>
     </div>
 
     <h3 style="font-family:var(--serif);font-size:1.1rem;margin:24px 0 12px;color:var(--dark)">Template 1: ADHD / Neurodivergent Communities</h3>
     <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:20px;font-size:0.87rem;color:var(--dark);line-height:1.75">
-      <p><strong>Post title:</strong> [Community name] — I built a fitness app specifically for how our energy actually works. Looking for Founding Members.</p>
+      <p><strong>Post title:</strong> [Community name] — I built a fitness app specifically for how our energy actually works. Looking for Lifetime Members.</p>
       <br>
       <p>Hey everyone — I've been part of this community for a few weeks and I've learned a lot from the conversations here, especially the ones about exercise and motivation.</p>
       <br>
@@ -1549,14 +1610,14 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
       <br>
       <p>No streaks (because we all know what happens when we break a streak and the shame spiral starts). No "no excuses" energy. No guilt notifications. It validates rest as legitimate. It welcomes you back without comment if you disappear for two weeks.</p>
       <br>
-      <p>I'm looking for Founding Members — people who want to test it properly and help shape it. You'd get 3 months free and full access to everything. If you want to continue after that, it's £49/year for life. You'd also get 10 friend codes to share at the same price.</p>
+      <p>I'm looking for Lifetime Members — people who want to test it properly and help shape it. Beta opens June 2026. You'd get full access to everything during the beta. If you want to stay after that, it's £49 for life. You'd also get 10 friend codes to share at the same price. There are only 50 places.</p>
       <br>
       <p>Anyone interested? Happy to answer questions about how it actually works — or what I learned building it that might be useful even if you never use the app.</p>
     </div>
 
     <h3 style="font-family:var(--serif);font-size:1.1rem;margin:24px 0 12px;color:var(--dark)">Template 2: Menopause / Women's Health Communities</h3>
     <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:20px;font-size:0.87rem;color:var(--dark);line-height:1.75">
-      <p><strong>Post title:</strong> I built a fitness app that actually accounts for how your energy changes week to week — not just day to day. Would love Founding Members from this community.</p>
+      <p><strong>Post title:</strong> I built a fitness app that actually accounts for how your energy changes week to week — not just day to day. Would love Lifetime Members from this community.</p>
       <br>
       <p>Something that's come up in so many conversations here is the frustration of fitness apps that treat you like your energy is consistent. You know it's not. I know it's not.</p>
       <br>
@@ -1564,7 +1625,7 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
       <br>
       <p>It's designed with hormonal fluctuation in mind from the ground up. The app won't suggest an intense cardio session on a day when your body is telling you something different. And it explains *why* it's making each recommendation, so you can trust what it says.</p>
       <br>
-      <p>I'm looking for Founding Members: 3 months free access, then £49/year for life if you want to stay. And honest feedback about what works and what doesn't — I'm still building this and your experience matters.</p>
+      <p>I'm looking for Lifetime Members: full beta access from June 2026, then £49 for life if you want to stay. Only 50 places available. And honest feedback about what works and what doesn't — I'm still building this and your experience matters.</p>
       <br>
       <p>Any questions welcome.</p>
     </div>
@@ -1601,15 +1662,16 @@ input[type="checkbox"]{width:18px;height:18px;accent-color:var(--teal);cursor:po
 </section>
 
 <!-- FOOTER -->
+<!-- UPDATED: Weston-super-Mare → Taunton -->
 <footer style="background:var(--teal-deep);color:rgba(255,255,255,0.6);padding:40px 72px;margin-top:0">
   <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px">
     <div>
       <div style="font-family:var(--serif);font-size:1.1rem;color:white;font-weight:700;margin-bottom:4px">Build New Habits</div>
-      <div style="font-size:0.78rem;font-family:var(--mono)">Alongside · Business Portfolio · March 2026</div>
+      <div style="font-size:0.78rem;font-family:var(--mono)">Alongside · Business Portfolio · March 2026 · V1.1</div>
     </div>
     <div style="text-align:right;font-size:0.78rem;font-family:var(--mono)">
       <div>Graeme Wright · buildnewhabits@outlook.com</div>
-      <div style="margin-top:4px">Weston-super-Mare, Somerset, England</div>
+      <div style="margin-top:4px">Taunton, Somerset, England</div>
       <div style="margin-top:4px;color:rgba(255,255,255,0.35)">CONFIDENTIAL — For authorised recipients only</div>
     </div>
   </div>
@@ -1632,14 +1694,11 @@ function toggleTask(checkbox) {
 
 function updateCounts() {
   const sections = ['legal', 'tech', 'financial', 'marketing', 'operational'];
-  let totalDone = 0, totalAll = 0;
   sections.forEach(cat => {
     const rows = document.querySelectorAll(`.task-row[data-cat="${cat}"]`);
     const done = document.querySelectorAll(`.task-row[data-cat="${cat}"].done`).length;
     const el = document.getElementById(`cnt-${cat}`);
     if (el) el.textContent = `${done}/${rows.length} done`;
-    totalDone += done;
-    totalAll += rows.length;
   });
 }
 
